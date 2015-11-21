@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MunchieMapper</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_off_campus_list">offCampusList</string>
+    <string name="title_activity_on_campus_list">onCampusList</string>
+
+</resources>

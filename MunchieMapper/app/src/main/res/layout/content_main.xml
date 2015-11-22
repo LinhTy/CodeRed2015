@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
@@ -20,7 +21,10 @@
         android:layout_above="@+id/offCampusButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="19dp"
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"></Button>
+
 
     <Button
         android:layout_width="wrap_content"
@@ -33,7 +37,10 @@
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/campusButton"
         android:layout_alignStart="@+id/campusButton"
-        android:onClick="onClickOff"/>
+        android:onClick="onClickOff"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"></Button>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,5 +49,8 @@
         android:text="Choose a general area"
         android:id="@+id/menuText"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="30dp"/>
+
 </RelativeLayout>

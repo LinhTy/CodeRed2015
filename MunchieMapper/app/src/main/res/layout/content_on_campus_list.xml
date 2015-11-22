@@ -17,17 +17,119 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="On Campus Listing"
         android:id="@+id/textView2"
+        android:textColor="#ffffff"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp" />
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Random Button"
+        android:text="Return"
         android:id="@+id/button3"
+        android:onClick="onClick"
+        android:background="@drawable/colored_nonrounded"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/filter"
+        android:id="@+id/filterText"
+        android:textStyle="bold"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/foodType"
+        android:id="@+id/foodTypeText"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="52dp" />
+        android:layout_below="@+id/filterText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/price"
+        android:id="@+id/priceText"
+        android:layout_below="@+id/foodTypeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/distance"
+        android:id="@+id/distanceText"
+        android:layout_below="@+id/priceText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Rating"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/distanceText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/foodSpinner"
+        android:textAlignment="center"
+        android:textSize="5sp"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignTop="@+id/foodTypeText"
+        android:layout_alignBottom="@+id/foodTypeText" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/priceSpinner"
+        android:layout_alignTop="@+id/priceText"
+        android:layout_alignBottom="@+id/priceText"
+        android:layout_alignRight="@+id/foodSpinner"
+        android:layout_alignEnd="@+id/foodSpinner"
+        android:layout_alignLeft="@+id/foodSpinner"
+        android:layout_alignStart="@+id/foodSpinner"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distanceSpinner"
+        android:layout_below="@+id/priceSpinner"
+        android:layout_alignRight="@+id/priceSpinner"
+        android:layout_alignEnd="@+id/priceSpinner"
+        android:layout_alignBottom="@+id/distanceText"
+        android:layout_alignLeft="@+id/priceSpinner"
+        android:layout_alignStart="@+id/priceSpinner"
+        android:textAlignment="center" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+
 </RelativeLayout>

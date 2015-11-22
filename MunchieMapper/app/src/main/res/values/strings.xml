@@ -3,6 +3,34 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_off_campus_list">offCampusList</string>
     <string name="title_activity_on_campus_list">onCampusList</string>
-    <string name="title_activity_random_picker">RandomPicker</string>
+    <string name="filter">Filter</string>
+    <string name="foodType">Food Type</string>
+    <string name="price">Price Range</string>
+    <string name="distance">Distance</string>
+    <string-array name="food_array">
+        <item>Hamburgers</item>
+        <item>Sandwiches</item>
+        <item>Tacos</item>
+        <item>Chinese</item>
+        <item>Vietnamese</item>
+        <item>Thai</item>
+        <item>Buffet</item>
+        <item>Italian</item>
+        <item>Breakfast</item>
+    </string-array>
+    <string-array name="prices">
+        <item>Under $5</item>
+        <item>Under $10</item>
+        <item>Under $15</item>
+        <item>Under $20</item>
+        <item>Money is no object</item>
+    </string-array>
+    <string-array name="distance">
+        <item>Within 1 mile</item>
+        <item>Within 3 miles</item>
+        <item>Within 5 miles</item>
+        <item>Within 10 miles</item>
+        <item>Road Trip!</item>
+    </string-array>
 
 </resources>

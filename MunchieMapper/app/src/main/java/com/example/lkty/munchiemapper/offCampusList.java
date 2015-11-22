@@ -1,5 +1,6 @@
 package com.example.lkty.munchiemapper;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,6 +18,11 @@ public class offCampusList extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+    }
+
+    public void onClick(View v){
+        Intent intentSwitcher = new Intent(this,MainActivity.class);
+        startActivity(intentSwitcher);
     }
 
 }
